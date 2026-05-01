@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.3.1/core.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="module" src="https://pyscript.net/releases/2024.3.1/core.js"></script>
+    <title>Grade 10 Sapphire Future Professions</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+            background-image: url('1.jpg');
+            background-size: cover;
+            color: #f8f9fa;
+            padding-top: 40px;
+        }
+
+        h2 {
+            text-align: center;
+            font-weight: 300;
+            letter-spacing: 1px;
+            color: #000000;
+            margin-bottom: 30px;
+        }
+
+        .menu-card {
+            border-radius: 18px;
+            padding: 22px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .menu-card h3 {
+            color: #000000;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        label {
+            color: #000000;
+            font-size: 1.0rem;
+        }
+
+        .form-control {
+            border-radius: 10px;
+            border: none;
+            padding: 10px;
+        }
+
+        .form-control:focus {
+            box-shadow: 0 0 0 0.2rem rgba(0, 81, 255, 0.3);
+        }
+
+        .btn {
+            background: #052a91;
+            color: #ffffff;
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+            padding: 8px 14px;
+            margin-right: 5px;
+        }
+
+        #notif {
+            margin-top: 10px;
+            padding: 10px 14px;
+            border-radius: 8px;
+            font-weight: 600;
+            background-color: #e6ffed;
+            color: #1a7f37;
+            border-left: 4px solid #1a7f37;
+        }
+
+        .custom-navbar {
+            background-color: #052a91;
+            color: #ffffff;
+        }
+
+        .menu-card h5 {
+            margin: 0;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="blue-theme">
+<nav class="navbar navbar-expand-sm navbar-dark fixed-top custom-navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="10-sapphire.png" style="width: 40px; height: 40px;" class="rounded-circle">
+        </a>
+
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Class Ambitions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="graph.html">Attendance Checker</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="memories.html">Class Highlights</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <h2 style="text-align: center;">Grade 10 Sapphire: Future Professions🎓</h2>
+
+    <div class="container py-3">
+        <div class="row g-4">
+            <div class="col-12 d-flex flex-wrap gap-4">
+
+                <!-- Menu Card -->
+                <div class="menu-card p-4 flex-fill" style="min-width: 300px; max-height: 500px; overflow-y: auto;">
+                    <h5 class="mb-3" style="color: #ffffff; background-color: #052a91; padding: 10px; margin-top: 0;">Classmates</h5>
+                    <p id="classmate-list"></p>
+                </div>
+
+                <!-- Customer Details Card -->
+                <div class="menu-card p-4 flex-fill" style="min-width: 300px;">
+                    <h5 class="mb-3" style="color: #ffffff; background-color: #052a91; padding: 10px; margin-top: 0;">Classmate Details</h5>
+
+                    <div class="mb-3">
+                        <label for="name" class="form-label"><b>📚Classmate Name</b></label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="section" class="form-label"><b>⭐Section</b></label>
+                        <input type="text" class="form-control" id="section" placeholder="Enter your section">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="Future_profession" class="form-label"><b>🎓Future profession</b></label>
+                        <input type="text" class="form-control" id="Future_profession" placeholder="Enter your future profession">
+                    </div>
+
+                    <div>
+                        <button class="btn" py-click="addClassmate">Add Classmate</button>
+                        <button class="btn" py-click="showlist">Show List</button>
+                    </div>
+
+                    <div>
+                        <p style="font-size: 13px;" id="notif"></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="py" src="main.py"></script>
+</body>
+</html>

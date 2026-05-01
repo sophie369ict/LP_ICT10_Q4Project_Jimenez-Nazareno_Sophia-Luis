@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- PyScript -->
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>OBMC Intramurals Sign Up</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+            background-image: url('3.jpg');
+            background-size: cover;
+            color: #f8f9fa;
+            padding-top: 40px;
+        }
+
+        h2 {
+            text-align: center;
+            font-weight: 300;
+            letter-spacing: 1px;
+            color: #000000;
+            margin-bottom: 30px;
+        }
+
+        .menu-card {
+            border-radius: 18px;
+            padding: 22px;
+            padding-top: 0px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .menu-card h3 {
+            color: #000000;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        label {
+            color: #000000;
+            font-size: 1.0rem;
+        }
+
+        .form-control {
+            border-radius: 10px;
+            border: none;
+            padding: 10px;
+        }
+
+        .form-control:focus {
+            box-shadow: 0 0 0 0.2rem rgba(0, 81, 255, 0.3);
+        }
+
+        .btn {
+            background: #052a91;
+            color: #ffffff;
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+            padding: 8px 14px;
+            margin-right: 5px;
+        }
+
+        #notif {
+            margin-top: 10px;
+            padding: 10px 14px;
+            border-radius: 8px;
+            font-weight: 600;
+            background-color: #e6ffed;
+            color: #1a7f37;
+            border-left: 4px solid #1a7f37;
+        }
+
+        .custom-navbar {
+            background-color: #052a91;
+            color: #ffffff;
+        }
+
+        h5 {
+            margin: 0;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top custom-navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="10-sapphire.png" style="width: 40px; height: 40px;" class="rounded-circle">
+                </a>
+
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Class Ambitions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="graph.html">Attendance Checker</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="memories.html">Class Highlights</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- MAIN CONTENT -->
+        <div class="container">
+            <h2 class="text-center mb-4">Grade 10 Sapphire: Class Highlights</h2>
+
+            <!-- GRID SYSTEM -->
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                <!-- CARD 1 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="xmas party.webp" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:#ffffff; background-color:#052a91; padding:10px; margin-top:0;">Christmas Party</h5>
+                            <p class="card-text">Merry Christmas and Happy New Year! (one of the last ones 10-Sapphire will spend together)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="intrams.webp" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:#ffffff; background-color:#052a91; padding:10px; margin-top:0;">Intramurals</h5>
+                            <p class="card-text">Blue Bears, Green Hornets, Yellow Tigers, and Red Bulldogs fight for championship in the annual intramural competition.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="jco.webp" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:#ffffff; background-color:#052a91; padding:10px; margin-top:0;">Joint Camp Out</h5>
+                            <p class="card-text">Exciting outdoor adventures and team-building activities with the Grade 6!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="speech choir.webp" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:#ffffff; background-color:#052a91; padding:10px; margin-top:0;">Filipino Speech Choir</h5>
+                            <p class="card-text">Our successful speech choir interpretations of "Isang Dipang Langit" ni Amado V. Hernandez.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 5 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="ted talk.webp" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:#ffffff; background-color:#052a91; padding:10px; margin-top:0;">English Ted Talk</h5>
+                            <p class="card-text">10-Sapphire's class representatives share their "ideas worth sharing" in a Ted Talk competition.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 6 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="peace congress.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:#ffffff; background-color:#052a91; padding:10px; margin-top:0;">CAT Peace Congress</h5>
+                            <p class="card-text">10-Sapphire's participation and presentation of proposed Peace Projects in the annual peace congress.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
